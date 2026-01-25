@@ -1,30 +1,86 @@
-*:not(body) {
-    margin: 0;
-    padding: 0;
-    display: block;
-    image-rendering: pixelated;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: crisp-edges;
-}
+
 
 body {
-    background-color: white;
+    overflow-x: hidden;
+    background-color: #000;
 }
 
+
+/* Header */
 header {
-    background-color: gray;
+  background-color: #333;
+  padding: 20px 10px;
+  height: 75px;
+  margin: -10px;
+  margin-bottom: 20px;
 }
 
-.word_box {
-    display: block;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-    text-align:center;
-    background-color: #ccc;
-    border-style: solid;
-    border-width: 2px;
+header img, #header_right {
+    float: left;
 }
+
+#header_cceona_img {
+    margin-top: -15px;
+    height: 100px;
+}
+
+#header_right {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: -10px;
+    /*background-color: #ff00ff;*/
+}
+
+#header_right h1 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    color: #ddd;
+}
+
+#header_right div, button {
+    float: right;
+    margin-right: 5px;
+}
+
+#header_right input {
+    height: 30px;
+    width: 250px;
+}
+
+
+/* Main Dictionary */
+table * {
+    text-align: left;
+}
+
+thead tr {
+    background-color: #196B24;
+}
+
+th {
+    font-weight: bold;
+    color: #ddd;
+}
+
+td, th {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+.en_word {
+    padding-right: 10px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #83E28E;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #C1F0C8;
+}
+
+
+
+

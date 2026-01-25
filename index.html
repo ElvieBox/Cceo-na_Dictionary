@@ -1,15 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Cceo-na Dictionary</title>
+        <meta charset="UTF-8" />
         <link rel="stylesheet" href="styles.css">
-        <script type="text/javascript" src="cceonaDictionary.js"></script>
-        <script type="text/javascript" src="script.js"></script> 
-        <script type="text/javascript" src="searchbar.js"></script> 
+        <script type="text/javascript" src="./cceonaDictionary.js"></script>
+        <script type="text/javascript" src="./scripts/script.js"></script> 
+        <link rel="icon" type="image/x-icon" href="./images/Logo.png" />
     </head>
     <body onload=init()>
-        <header>AHHHHHH</header>
-        <div id="dictionary_box"></div>
+
+        <header>
+
+            <img id="header_cceona_img" src="./images/Logo.png" alt="Cceo-na Logo"/>
+
+            <div id="header_right">
+
+                <h1>Cceo-na Dictionary</h1>
+
+                <button onclick="sortTable('dict_table', 0, '');">
+                    <img id="sort_img" src="./images/Sort_Icon.png" height="25" style="cursor: pointer;" alt="Sort alphabetically" />
+                </button>
+
+                <!-- Search Bar -->
+                <div>
+                    <input class="searchInput" data-table-id="dict_table" type="search" placeholder="Search" 
+                    aria-label="Search" aria-target="table1">
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Main Table Dictionary -->
+        <table class="sortTable" id="dict_table" cellspacing="0">
+        <thead>
+            <tr>
+                <th scope="col">Cceo-na</th>
+                <th scope="col">Pronounciation</th>
+                <th scope="col">Definition</th>
+            </tr>
+        </thead>
+        <tbody id="dictionary">
+        </tbody>
+        </table>
+
+        <script src="./scripts/searchTable.js"></script>
+        <script src="./scripts/sortTable.js"></script>
+        
     </body>    
 </html>
 
