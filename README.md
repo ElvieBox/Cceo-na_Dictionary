@@ -11,7 +11,7 @@ This project tries to address those issues by creating a more well-supported web
 
 Magacc Cceo-na is the main language of the fantasy world of Ccava-tawre 
 
-It is made completely by Hathor, a close friend of mine, and has been expanding over the course of years
+It is made completely by Hathor, a friend of mine, and has been expanding over the course of years
 
 You can see the official page (which stays always current, unlike this project) in the link below
 
